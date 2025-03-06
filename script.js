@@ -76,8 +76,8 @@ function tampilkanUser(no, user) {
     <tr>
       <td>${no}</td>
       <td class="name">${user.name}</td>
-      <td class="tanggal">${user.date}</td>
-      <td class="gender">${user.note}</td>
+      <td class="date">${user.date}</td>
+      <td class="note">${user.note}</td>
       <td><button data-id=${user.id} class='btn-edit'>Edit</button></td>
       <td><button data-id=${user.id} class='btn-hapus'>Hapus</button></td>
     </tr>
@@ -111,7 +111,7 @@ function editUser() {
         ).innerText;
       const date =
         tombol_edit.parentElement.parentElement.querySelector(
-          ".tanggal"
+          ".date"
         ).innerText;
       const gender =
         tombol_edit.parentElement.parentElement.querySelector(
